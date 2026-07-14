@@ -20,13 +20,17 @@ function toggleTheme() {
   }
 }
 
-// Apply saved theme on page load
-(function applySavedTheme() {
+document.addEventListener('DOMContentLoaded', function () {
   const saved = localStorage.getItem('mb_theme');
+  const body = document.body;
+  const icon = document.getElementById('themeIcon');
   if (saved === 'aqua') {
-    document.body.classList.remove('theme-vino');
-    document.body.classList.add('theme-aqua');
-    const icon = document.getElementById('themeIcon');
+    body.classList.remove('theme-vino');
+    body.classList.add('theme-aqua');
     if (icon) icon.textContent = '◇';
+  } else {
+    body.classList.remove('theme-aqua');
+    body.classList.add('theme-vino');
+    if (icon) icon.textContent = '◈';
   }
-})();
+});
