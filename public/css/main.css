@@ -1139,3 +1139,80 @@ img {
   .container { padding: 0 16px; }
   .navbar-inner { padding: 0 16px; }
 }
+
+/* ─── Rose Petals ─── */
+.petal-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.petal {
+  position: absolute;
+  top: -60px;
+  border-radius: 80% 0 80% 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+@keyframes pd1 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.7; }
+  100% { transform: translateY(110vh) translateX(120px) rotate(720deg); opacity: 0; }
+}
+
+@keyframes pd2 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.6; }
+  100% { transform: translateY(110vh) translateX(-100px) rotate(-540deg); opacity: 0; }
+}
+
+@keyframes pd3 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.65; }
+  100% { transform: translateY(110vh) translateX(80px) rotate(480deg); opacity: 0; }
+}
+
+@keyframes pd4 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.55; }
+  100% { transform: translateY(110vh) translateX(-140px) rotate(-660deg); opacity: 0; }
+}
+
+@keyframes pd5 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.7; }
+  100% { transform: translateY(110vh) translateX(60px) rotate(900deg); opacity: 0; }
+}
+
+@keyframes pd6 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.5; }
+  100% { transform: translateY(110vh) translateX(-90px) rotate(-420deg); opacity: 0; }
+}
+
+@keyframes pd7 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.65; }
+  100% { transform: translateY(110vh) translateX(150px) rotate(600deg); opacity: 0; }
+}
+
+@keyframes pd8 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.6; }
+  100% { transform: translateY(110vh) translateX(-70px) rotate(-780deg); opacity: 0; }
+}
+
+@keyframes pd9 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.55; }
+  100% { transform: translateY(110vh) translateX(110px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes pd10 {
+  0%   { transform: translateY(-60px) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.7; }
+  100% { transform: translateY(110vh) translateX(-130px) rotate(-600deg); opacity: 0; }
+}

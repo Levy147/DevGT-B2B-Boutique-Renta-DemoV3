@@ -10,12 +10,12 @@ function toggleTheme() {
   if (isVino) {
     body.classList.remove('theme-vino');
     body.classList.add('theme-aqua');
-    if (icon) icon.textContent = '🍷';
+    if (icon) icon.textContent = '◇';
     localStorage.setItem('mb_theme', 'aqua');
   } else {
     body.classList.remove('theme-aqua');
     body.classList.add('theme-vino');
-    if (icon) icon.textContent = '🎨';
+    if (icon) icon.textContent = '◈';
     localStorage.setItem('mb_theme', 'vino');
   }
 }
@@ -27,6 +27,6 @@ function toggleTheme() {
     document.body.classList.remove('theme-vino');
     document.body.classList.add('theme-aqua');
     const icon = document.getElementById('themeIcon');
-    if (icon) icon.textContent = '🍷';
+    if (icon) icon.textContent = '◇';
   }
 })();
