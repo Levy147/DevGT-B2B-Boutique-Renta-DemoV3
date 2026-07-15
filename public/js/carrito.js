@@ -1,6 +1,6 @@
 /**
  * ============================================================
- *  Nicol Dress Rental - Lógica de Usuario
+ *  Mujer Bonita GT - Lógica de Usuario
  *  ============================================================
  *  Auth, Favoritos, Citas, reseñas, cross-selling, calendario.
  * ============================================================
