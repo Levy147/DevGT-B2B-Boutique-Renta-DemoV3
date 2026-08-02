@@ -7,7 +7,7 @@
   const STORAGE_KEY = 'mb_lang';
 
   const FLAGS = {
-    es: '<svg viewBox="0 0 24 16" width="20" height="14" aria-hidden="true"><rect width="24" height="16" fill="#aa151b"/><rect y="4" width="24" height="8" fill="#f1bf00"/><rect y="6" width="24" height="4" fill="#aa151b"/></svg>',
+    es: '<svg viewBox="0 0 24 16" width="20" height="14" aria-hidden="true"><rect width="24" height="16" fill="#aa151b"/><rect y="4" width="24" height="8" fill="#f1bf00"/></svg>',
     en: '<svg viewBox="0 0 24 16" width="20" height="14" aria-hidden="true"><rect width="24" height="16" fill="#b22234"/><rect y="0" width="24" height="1.33" fill="#fff"/><rect y="2.67" width="24" height="1.33" fill="#fff"/><rect y="5.33" width="24" height="1.33" fill="#fff"/><rect y="8" width="24" height="1.33" fill="#fff"/><rect y="10.67" width="24" height="1.33" fill="#fff"/><rect y="13.33" width="24" height="1.33" fill="#fff"/><rect width="9.6" height="8" fill="#3c3b6e"/></svg>'
   };
 
@@ -186,7 +186,7 @@
 
     wrapper.innerHTML = `
       <button class="lang-btn" id="langToggle" aria-haspopup="listbox" aria-expanded="false" title="Select language / Seleccionar idioma">
-        <span class="lang-flags">${FLAGS.es}${FLAGS.en}</span>
+        <span class="lang-flags" id="langCurrentFlag">${FLAGS[currentLang]}</span>
         <span class="lang-caret">▾</span>
       </button>
       <div class="lang-dropdown" id="langDropdown" role="listbox">
@@ -242,6 +242,8 @@
     if (!TRANSLATIONS[lang]) return;
     currentLang = lang;
     localStorage.setItem(STORAGE_KEY, lang);
+    const flagEl = document.getElementById('langCurrentFlag');
+    if (flagEl) flagEl.innerHTML = FLAGS[lang];
     document.querySelectorAll('.lang-option').forEach((opt) => {
       const isSel = opt.getAttribute('data-lang') === lang;
       opt.classList.toggle('selected', isSel);
