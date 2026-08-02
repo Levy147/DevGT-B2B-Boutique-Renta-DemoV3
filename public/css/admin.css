@@ -949,6 +949,16 @@ tbody tr:last-child td {
   background: #f0f9fc;
 }
 
+.theme-aqua.admin-light .navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: var(--border) !important;
+}
+
+.theme-aqua.admin-light .navbar-logo,
+.theme-aqua.admin-light .navbar-logo span {
+  color: var(--text-primary) !important;
+}
+
 .admin-light .navbar {
   background: rgba(255, 255, 255, 0.95) !important;
   border-bottom-color: var(--border) !important;
@@ -961,6 +971,75 @@ tbody tr:last-child td {
 
 .admin-light .navbar div[style] {
   color: var(--text-muted) !important;
+}
+
+/* ─── Vino Admin Light Override (must come after .theme-vino in main.css) ─── */
+.theme-vino.admin-light {
+  --bg-cream: #f8f4f6;
+  --bg-white: #ffffff;
+  --bg-light: #fcfafa;
+  --bg-card: #f5f0f2;
+  --bg-gray: #f0ebed;
+  --bg-dark: #f8f4f6;
+
+  --text-primary: #2d1b20;
+  --text-secondary: #5a4048;
+  --text-muted: #9a7a84;
+  --text-light: #2d1b20;
+  --text-link: #a8445c;
+
+  --border: #e8dce0;
+  --border-light: #f0e8eb;
+
+  --primary: #a8445c;
+  --primary-dark: #7a2d42;
+  --accent: #c9788a;
+  --accent-soft: #d4a574;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.theme-vino.admin-light .admin-sidebar {
+  background: #ffffff;
+  border-right: 1px solid var(--border);
+}
+
+.theme-vino.admin-light .admin-sidebar a {
+  color: var(--text-secondary);
+}
+
+.theme-vino.admin-light .admin-sidebar a:hover {
+  background: rgba(168, 68, 92, 0.06);
+}
+
+.theme-vino.admin-light .admin-sidebar a.active {
+  background: rgba(168, 68, 92, 0.1);
+  border-left-color: var(--primary);
+}
+
+.theme-vino.admin-light .admin-sidebar .sidebar-logo {
+  color: var(--primary);
+}
+
+.theme-vino.admin-light thead th {
+  background: #f8f4f6;
+}
+
+.theme-vino.admin-light tbody tr:hover {
+  background: #fcfafa;
+}
+
+.theme-vino.admin-light .navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: var(--border) !important;
+}
+
+.theme-vino.admin-light .navbar-logo,
+.theme-vino.admin-light .navbar-logo span {
+  color: var(--text-primary) !important;
 }
 
 /* ─── Responsive Admin ─── */

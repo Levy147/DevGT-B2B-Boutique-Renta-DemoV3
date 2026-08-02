@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="public/css/cliente.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
   <script src="public/js/theme.js"></script>
+  <script src="public/js/lang.js"></script>
 </head>
 <body class="theme-vino">
   <nav class="navbar" id="navbar">
@@ -15,16 +16,16 @@
       <a href="index.html" class="navbar-logo"><span>✦ Mujer Bonita GT</span></a>
       <button class="menu-toggle" id="menuToggle">☰</button>
       <div class="navbar-links" id="navbarLinks">
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html" class="active">Catálogo</a>
-        <a href="index.html#como-funciona">Cómo Funciona</a>
+        <a href="index.html" data-i18n="nav_home">Inicio</a>
+        <a href="catalogo.html" class="active" data-i18n="nav_catalog">Catálogo</a>
+        <a href="index.html#como-funciona" data-i18n="nav_how">Cómo Funciona</a>
       </div>
       <div class="navbar-actions">
-        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Cambiar tema">
-          <span id="themeIcon">◈</span> Cambiar tema
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Cambiar tema" data-i18n-title="nav_theme">
+          <span id="themeIcon">◈</span> <span data-i18n="nav_theme">Cambiar tema</span>
         </button>
         <button class="btn-icon" onclick="handleFavClick()">♡</button>
-        <button class="btn btn-primary btn-sm" id="loginBtn" onclick="toggleUserMenu()">Iniciar Sesión</button>
+        <button class="btn btn-primary btn-sm" id="loginBtn" onclick="toggleUserMenu()"><span data-i18n="nav_login">Iniciar Sesión</span></button>
       </div>
     </div>
   </nav>
@@ -37,12 +38,12 @@
   <div class="size-guide-modal" id="sizeGuideModal" style="display:none;">
     <div class="size-guide-content">
       <div class="size-guide-header">
-        <h3>Guía de Tallas</h3>
+        <h3 data-i18n="size_guide_title">Guía de Tallas</h3>
         <button class="modal-close" onclick="document.getElementById('sizeGuideModal').style.display='none'">×</button>
       </div>
       <table class="size-guide-table">
         <thead>
-          <tr><th>Talla</th><th>Busto (cm)</th><th>Cintura (cm)</th><th>Cadera (cm)</th></tr>
+          <tr><th data-i18n="size_size">Talla</th><th data-i18n="size_bust">Busto (cm)</th><th data-i18n="size_waist">Cintura (cm)</th><th data-i18n="size_hip">Cadera (cm)</th></tr>
         </thead>
         <tbody>
           <tr><td>XS</td><td>82-86</td><td>62-66</td><td>88-92</td></tr>
@@ -64,10 +65,10 @@
       </div>
       <div>
         <h4>Explorar</h4>
-        <a href="catalogo.html">Catálogo</a><br>
-        <a href="index.html#como-funciona">Cómo Funciona</a>
+        <a href="catalogo.html" data-i18n="nav_catalog">Catálogo</a><br>
+        <a href="index.html#como-funciona" data-i18n="nav_how">Cómo Funciona</a>
       </div>
-      <div><h4>Ayuda</h4><a href="faq.html">FAQ</a><br><a href="politicas.html">Política de Alquiler</a><br><a href="terminos.html">Términos</a><br><a href="privacidad.html">Privacidad</a></div>
+      <div><h4>Ayuda</h4><a href="faq.html" data-i18n="footer_faq">FAQ</a><br><a href="politicas.html">Política de Alquiler</a><br><a href="terminos.html">Términos</a><br><a href="privacidad.html">Privacidad</a></div>
       <div>
         <h4>Contacto</h4>
         <p>◎ C.C. Paseo San Isidro, Local 19, Zona 16</p>

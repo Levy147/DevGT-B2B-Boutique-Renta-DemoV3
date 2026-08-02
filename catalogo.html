@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="public/css/cliente.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
   <script src="public/js/theme.js"></script>
+  <script src="public/js/lang.js"></script>
 </head>
 <body class="theme-vino">
   <nav class="navbar" id="navbar">
@@ -15,32 +16,32 @@
       <a href="index.html" class="navbar-logo"><span>✦ Mujer Bonita GT</span></a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menú">☰</button>
       <div class="navbar-links" id="navbarLinks">
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html" class="active">Catálogo</a>
-        <a href="index.html#como-funciona">Cómo Funciona</a>
+        <a href="index.html" data-i18n="nav_home">Inicio</a>
+        <a href="catalogo.html" class="active" data-i18n="nav_catalog">Catálogo</a>
+        <a href="index.html#como-funciona" data-i18n="nav_how">Cómo Funciona</a>
       </div>
       <div class="navbar-actions">
-        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Cambiar tema">
-          <span id="themeIcon">◈</span> Cambiar tema
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Cambiar tema" data-i18n-title="nav_theme">
+          <span id="themeIcon">◈</span> <span data-i18n="nav_theme">Cambiar tema</span>
         </button>
         <button class="btn-icon" onclick="handleFavClick()" title="Favoritos">♡</button>
-        <button class="btn btn-primary btn-sm" id="loginBtn" onclick="toggleUserMenu()">Iniciar Sesión</button>
+        <button class="btn btn-primary btn-sm" id="loginBtn" onclick="toggleUserMenu()"><span data-i18n="nav_login">Iniciar Sesión</span></button>
       </div>
     </div>
   </nav>
 
   <main class="main-content">
     <div class="page-hero">
-      <h1>Catálogo de Vestidos</h1>
-      <p>Encuentra el vestido perfecto para tu evento especial</p>
+      <h1 data-i18n="cat_page_title">Catálogo de Vestidos</h1>
+      <p data-i18n="cat_page_sub">Encuentra el vestido perfecto para tu evento especial</p>
     </div>
 
     <div class="container">
       <div class="catalog-layout">
         <aside class="filters-sidebar" id="filtersSidebar">
           <div class="filters-header">
-            <h3>Filtros</h3>
-            <span class="clear-filters" onclick="limpiarFiltros()">Limpiar todo ×</span>
+            <h3 data-i18n="cat_filters">Filtros</h3>
+            <span class="clear-filters" onclick="limpiarFiltros()"><span data-i18n="cat_clear">Limpiar todo ×</span></span>
           </div>
 
           <div class="filter-group">
@@ -129,12 +130,12 @@
       </div>
       <div>
         <h4>Explorar</h4>
-        <a href="catalogo.html">Catálogo</a><br>
-        <a href="index.html#como-funciona">Cómo Funciona</a><br>
+        <a href="catalogo.html" data-i18n="nav_catalog">Catálogo</a><br>
+        <a href="index.html#como-funciona" data-i18n="nav_how">Cómo Funciona</a><br>
         <a href="catalogo.html?categoria=Boda">Novia</a><br>
         <a href="catalogo.html?categoria=15 Años">15 Años</a>
       </div>
-      <div><h4>Ayuda</h4><a href="faq.html">FAQ</a><br><a href="politicas.html">Política de Alquiler</a><br><a href="terminos.html">Términos</a><br><a href="privacidad.html">Privacidad</a></div>
+      <div><h4>Ayuda</h4><a href="faq.html" data-i18n="footer_faq">FAQ</a><br><a href="politicas.html">Política de Alquiler</a><br><a href="terminos.html">Términos</a><br><a href="privacidad.html">Privacidad</a></div>
       <div>
         <h4>Contacto</h4>
         <p>◎ C.C. Paseo San Isidro, Local 19, Zona 16</p>
