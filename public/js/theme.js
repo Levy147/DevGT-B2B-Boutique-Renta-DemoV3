@@ -1,5 +1,5 @@
-/**
- * Theme Toggle for DemoV3 - Mujer Bonita GT
+﻿/**
+ * Theme Toggle for DemoV3 - Atelier Aurora
  * Switches between .theme-vino (wine) and .theme-aqua styles
  * On admin pages (body.admin-light), toggles theme + preserves admin styles
  */

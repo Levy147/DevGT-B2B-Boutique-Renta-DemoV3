@@ -1,14 +1,14 @@
-/**
+﻿/**
  * ============================================================
- *  Mujer Bonita GT - Reservas Rápidas
+ *  Atelier Aurora - Reservas Rápidas
  *  ============================================================
  *  Reserva sin login → Google Sheets + WhatsApp + localStorage
  *  También funciona con login (auto-completa datos).
  * ============================================================
  */
 
-const WHATSAPP_NUMBER = '5022150838';
-const WHATSAPP_NUMBER_DISPLAY = '2150-838';
+const WHATSAPP_NUMBER = '50255551234';
+const WHATSAPP_NUMBER_DISPLAY = '5555-1234';
 const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwLBusrx7LI2cq4vlepZtTG6yOBQaNgS3ozZz3AimAa5DQMHMF-ClktcJNmEDFphg/exec';
 
 // ─── ABRIR MODAL DE RESERVA RÁPIDA ───

@@ -1,6 +1,6 @@
-/**
+﻿/**
  * ============================================================
- *  Mujer Bonita GT - Lógica de Usuario
+ *  Atelier Aurora - Lógica de Usuario
  *  ============================================================
  *  Auth, Favoritos, Citas, reseñas, cross-selling, calendario.
  * ============================================================

@@ -1,6 +1,6 @@
-/**
+﻿/**
  * ============================================================
- *  Mujer Bonita GT - Lógica del Panel Admin
+ *  Atelier Aurora - Lógica del Panel Admin
  *  ============================================================
  *  Dashboard, citas con WhatsApp, inventario, estadísticas,
  *  tintorería, daños, QR.
@@ -62,7 +62,7 @@ function renderizarCitas(citas, containerId) {
     const stClass = statusClass[c.estado_cita] || 'badge-default';
     
     // WhatsApp link para recordatorio
-    const waMsg = encodeURIComponent(`¡Hola ${usuario?.nombre || ''}! Te esperamos mañana a las ${c.hora} para tu ${tipoLabel[c.tipo] || c.tipo} de ${vestido ? formatDressName(vestido) : ''} en Mujer Bonita GT. ◎ C.C. Paseo San Isidro, Local 19, Zona 16, Guatemala.`);
+    const waMsg = encodeURIComponent(`¡Hola ${usuario?.nombre || ''}! Te esperamos mañana a las ${c.hora} para tu ${tipoLabel[c.tipo] || c.tipo} de ${vestido ? formatDressName(vestido) : ''} en Atelier Aurora. ◎ Centro Comercial Demo, Local 1, Zona 10, Guatemala.`);
     const waLink = usuario ? `https://wa.me/${usuario.telefono.replace(/[^0-9]/g, '')}?text=${waMsg}` : '#';
 
     return `

@@ -1,5 +1,5 @@
-/**
- * Language Selector for DemoV3 - Mujer Bonita GT
+﻿/**
+ * Language Selector for DemoV3 - Atelier Aurora
  * ES/EN toggle. Injects the language button next to the theme toggle.
  * Translations via [data-i18n] attributes. Persists in localStorage.
  */
@@ -25,7 +25,7 @@
       hero_title_2: 'para tu momento especial',
       hero_lead: 'Renta de vestidos para Fiesta, Novia, Damas y 15 Años.',
       hero_lead_sub: 'Elegancia y estilo a precios accesibles. ¡Agenda tu prueba hoy!',
-      hero_location: 'C.C. Paseo San Isidro, Local 19, Zona 16, Guatemala',
+      hero_location: 'Centro Comercial Demo, Local 1, Zona 10, Guatemala',
       hero_cta_catalog: 'Explorar Catálogo',
       hero_cta_how: '¿Cómo funciona?',
       featured_title: 'Vestidos Más Rentados',
@@ -61,8 +61,8 @@
       footer_terms: 'Términos y Condiciones',
       footer_privacy: 'Aviso de Privacidad',
       footer_contact: 'Contacto',
-      footer_desc: 'Renta de vestidos para Fiesta, Novia, Damas y 15 Años. Elegancia y estilo en C.C. Paseo San Isidro, Zona 16, Guatemala.',
-      footer_rights: '© 2026 Mujer Bonita GT - Guatemala. Todos los derechos reservados.',
+      footer_desc: 'Renta de vestidos para Fiesta, Novia, Damas y 15 Años. Elegancia y estilo en Guatemala.',
+      footer_rights: '© 2026 Atelier Aurora - Guatemala. Todos los derechos reservados.',
       footer_devgt: 'Desarrollado por',
       wa_float: 'Escríbenos por WhatsApp',
       login_title: 'Iniciar Sesión',
@@ -94,7 +94,7 @@
       hero_title_2: 'for your special moment',
       hero_lead: 'Dress rentals for Parties, Brides, Bridesmaids and Quinceañeras.',
       hero_lead_sub: 'Elegance and style at affordable prices. Book your fitting today!',
-      hero_location: 'C.C. Paseo San Isidro, Local 19, Zona 16, Guatemala',
+      hero_location: 'Centro Comercial Demo, Local 1, Zona 10, Guatemala',
       hero_cta_catalog: 'Explore Catalog',
       hero_cta_how: 'How it works?',
       featured_title: 'Most Rented Dresses',
@@ -130,8 +130,8 @@
       footer_terms: 'Terms & Conditions',
       footer_privacy: 'Privacy Policy',
       footer_contact: 'Contact',
-      footer_desc: 'Dress rentals for Parties, Brides, Bridesmaids and Quinceañeras. Elegance and style at C.C. Paseo San Isidro, Zona 16, Guatemala.',
-      footer_rights: '© 2026 Mujer Bonita GT - Guatemala. All rights reserved.',
+      footer_desc: 'Dress rentals for Parties, Brides, Bridesmaids and Quinceañeras. Elegance and style in Guatemala.',
+      footer_rights: '© 2026 Atelier Aurora - Guatemala. All rights reserved.',
       footer_devgt: 'Developed by',
       wa_float: 'Message us on WhatsApp',
       login_title: 'Log In',
